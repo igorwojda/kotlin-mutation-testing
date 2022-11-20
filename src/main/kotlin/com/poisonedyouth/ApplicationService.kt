@@ -7,7 +7,7 @@ class ApplicationService {
             return list
         }
         val result = mutableListOf<String>()
-        for(element in list) {
+        for (element in list) {
             if (element.startsWith(filter)) {
                 result.add(element)
             }

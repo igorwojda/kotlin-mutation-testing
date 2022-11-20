@@ -6,6 +6,6 @@ Cmd
 `./gradlew pitest`
 
 or
+
 [PIT Mutation Testing](https://plugins.jetbrains.com/plugin/7119-pit-mutation-testing) IDEA plugin 
 `Run->Edit Configurations->Defaults->Pit Runner`
-
