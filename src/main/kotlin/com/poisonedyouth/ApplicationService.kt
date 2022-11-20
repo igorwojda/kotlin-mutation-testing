@@ -1,6 +1,6 @@
 package com.poisonedyouth
 
-object ApplicationService {
+class ApplicationService {
 
     fun filterList(list: List<String>, filter: String): List<String> {
         if (filter.isBlank()) {

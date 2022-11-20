@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test
 
 class ApplicationServiceTest {
 
+    private val sut = ApplicationService()
+
     @Test
     fun `filterList returns empty list for empty input`() {
         // given
@@ -12,7 +14,7 @@ class ApplicationServiceTest {
         val filter = "test"
 
         // when
-        val actual = ApplicationService.filterList(list, filter)
+        val actual = sut.filterList(list, filter)
 
         // then
         assertThat(actual).isEmpty()
@@ -25,7 +27,7 @@ class ApplicationServiceTest {
         val filter = ""
 
         // when
-        val actual = ApplicationService.filterList(list, filter)
+        val actual = sut.filterList(list, filter)
 
         // then
         assertThat(actual).isEqualTo(list)
@@ -38,7 +40,7 @@ class ApplicationServiceTest {
         val filter = "test"
 
         // when
-        val actual = ApplicationService.filterList(list, filter)
+        val actual = sut.filterList(list, filter)
 
         // then
         assertThat(actual).isEmpty()
@@ -51,7 +53,7 @@ class ApplicationServiceTest {
         val filter = "a"
 
         // when
-        val actual = ApplicationService.filterList(list, filter)
+        val actual = sut.filterList(list, filter)
 
         // then
         assertThat(actual).containsExactlyInAnyOrder("a", "ab")
