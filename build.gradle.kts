@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.20"
-    id("info.solidsoft.pitest") version "1.7.4"
+    id("info.solidsoft.pitest") version "1.9.0"
 }
 
 group = "com.poisonedyouth"
@@ -19,6 +19,7 @@ pitest {
     setProperty("outputFormats", listOf("HTML"))
     setProperty("failWhenNoMutations", false)
     setProperty("mutators", listOf("ALL"))
+    setProperty("verbose", true)
 }
 
 dependencies {
