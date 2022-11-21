@@ -3,7 +3,7 @@ Updated repo for [How to improve the quality of tests using mutation testing](ht
 ## Run Mutation Tests
 
 Cmd 
-`./gradlew pitest`
+`./gradlew pitest --rerun-tasks` (`--rerun-tasks` flag is required to display cmd output in the following runs)
 
 or
 
