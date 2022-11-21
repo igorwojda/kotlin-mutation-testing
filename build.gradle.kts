@@ -13,13 +13,13 @@ repositories {
 }
 
 pitest {
+    setProperty("pitestVersion", "1.9.0")
     setProperty("junit5PluginVersion", "1.1.0")
-    setProperty("testPlugin", "junit5")
     setProperty("targetClasses", listOf("com.poisonedyouth.*"))
     setProperty("outputFormats", listOf("HTML"))
     setProperty("failWhenNoMutations", false)
     setProperty("mutators", listOf("ALL"))
-    setProperty("verbose", true)
+//    setProperty("verbose", true)
 }
 
 dependencies {
